@@ -1,0 +1,1239 @@
+login as: eltex-pg1-v13
+Server refused our key
+eltex-pg1-v13@217.71.138.1's password: 
+Linux eltex-2026-spring 6.1.0-44-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.164-1 (2026-03-09) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Mon May  4 18:10:42 2026 from 104.28.212.74
+
+eltex-pg1-v13@eltex-2026-spring-12:50>ssh  172.16.9.187git config --global user.name ivifia
+
+-bash: git: command not found
+eltex-pg1-v13@eltex-2026-spring-12:50>ssh 172.16.9.187
+
+
+eltex-pg1-v13@172.16.9.187's password: 
+
+eltex-pg1-v13@eltex-2026-spring-12:50>ssh 172.16.9.187r172.16.9.187o172.16.9.187o172.16.9.187t172.16.9.187@172.16.9.187
+
+Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-110-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Tue May  5 05:55:02 AM UTC 2026
+
+  System load:  0.0                Processes:              112
+  Usage of /:   42.6% of 14.66GB   Users logged in:        0
+  Memory usage: 7%                 IPv4 address for ens18: 172.16.9.187
+  Swap usage:   0%
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+Expanded Security Maintenance for Applications is not enabled.
+
+96 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+1 additional security update can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+
+bakuk aleksandr
+Last login: Mon May  4 11:12:08 2026 from 172.16.8.4
+
+root@eltex-practice2-pg1-v13:~# git config --global user.name ivifia
+
+root@eltex-practice2-pg1-v13:~# git config --lglobal user.mailemail abbakuksasha@gmail.com
+
+root@eltex-practice2-pg1-v13:~# git config --global init.defaultBranch main
+
+root@eltex-practice2-pg1-v13:~# apt update
+
+
+0% [Working]
+            
+Hit:1 http://ru.archive.ubuntu.com/ubuntu noble InRelease
+
+0% [Connecting to security.ubuntu.com (185.125.190.83)]
+                                                       
+Get:2 http://ru.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+
+0% [2 InRelease 11.8 kB/126 kB 9%] [Connecting to security.ubuntu.com (185.125.190.83)]
+0% [2 InRelease 35.9 kB/126 kB 28%] [Connecting to security.ubuntu.com (185.125.190.83)]
+                                                                                        
+0% [Connecting to security.ubuntu.com (185.125.190.81)]
+                                                       
+Get:3 http://ru.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+
+0% [3 InRelease 126 kB/126 kB 100%] [Connecting to security.ubuntu.com (185.125.190.81)]
+                                                                                        
+0% [Connecting to security.ubuntu.com (185.125.190.81)]
+0% [Connecting to security.ubuntu.com (185.125.190.81)]
+                                                       
+Get:4 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1,959 kB]
+
+0% [4 Packages 74.1 kB/1,959 kB 4%] [Connecting to security.ubuntu.com (185.125.190.81)]
+0% [4 Packages 790 kB/1,959 kB 40%] [Connecting to security.ubuntu.com (185.125.190.81)]
+                                                                                        
+0% [Connecting to security.ubuntu.com (91.189.92.24)]
+0% [4 Packages store 0 B] [Waiting for headers] [Connecting to security.ubuntu.com (91.189.92.24)]
+                                                                                                  
+Get:5 http://ru.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [349 kB]
+
+0% [4 Packages store 0 B] [5 Translation-en 0 B/349 kB 0%] [Connecting to security.ubuntu.com (91.189.92.24)]
+                                                                                                             
+0% [4 Packages store 0 B] [Connecting to security.ubuntu.com (91.189.92.24)]
+                                                                            
+Get:6 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [177 kB]
+
+0% [4 Packages store 0 B] [6 Components-amd64 59.5 kB/177 kB 34%] [Connecting to security.ubuntu.com (91.189.92.24)]
+                                                                                                                    
+0% [4 Packages store 0 B] [Connecting to security.ubuntu.com (91.189.92.24)]
+                                                                            
+Get:7 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 c-n-f Metadata [17.1 kB]
+
+0% [4 Packages store 0 B] [7 Commands-amd64 17.1 kB/17.1 kB 100%] [Connecting to security.ubuntu.com (91.189.92.24)]
+                                                                                                                    
+Get:8 http://ru.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [3,113 kB]
+
+                                                                                                                    
+0% [4 Packages store 0 B] [8 Packages 127 kB/3,113 kB 4%] [Connecting to security.ubuntu.com (91.189.92.24)]
+                                                                                                            
+0% [4 Packages store 0 B] [Connecting to security.ubuntu.com (185.125.190.82)]
+                                                                              
+Get:9 http://ru.archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [718 kB]
+
+0% [4 Packages store 0 B] [9 Translation-en 4,096 B/718 kB 1%] [Connecting to security.ubuntu.com (185.125.190.82)]
+                                                                                                                   
+0% [4 Packages store 0 B] [Waiting for headers] [Connecting to security.ubuntu.com (185.125.190.82)]
+                                                                                                    
+Get:10 http://ru.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1,685 kB]
+
+0% [4 Packages store 0 B] [10 Packages 0 B/1,685 kB 0%] [Connecting to security.ubuntu.com (185.125.190.82)]
+                                                                                                            
+Get:11 http://ru.archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [325 kB]
+
+0% [4 Packages store 0 B] [11 Translation-en 181 kB/325 kB 56%] [Connecting to security.ubuntu.com (185.125.190.82)]
+                                                                                                                    
+0% [4 Packages store 0 B] [Connecting to security.ubuntu.com (185.125.190.82)]
+                                                                              
+Get:12 http://ru.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [386 kB]
+
+0% [4 Packages store 0 B] [12 Components-amd64 0 B/386 kB 0%] [Connecting to security.ubuntu.com (185.125.190.82)]
+                                                                                                                  
+0% [4 Packages store 0 B] [Connecting to security.ubuntu.com (185.125.190.82)]
+                                                                              
+Get:13 http://ru.archive.ubuntu.com/ubuntu noble-updates/universe amd64 c-n-f Metadata [34.5 kB]
+
+                                                                              
+Get:14 http://ru.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
+
+                                                                              
+Get:15 http://ru.archive.ubuntu.com/ubuntu noble-backports/main amd64 Packages [40.6 kB]
+
+0% [4 Packages store 0 B] [15 Packages 23.1 kB/40.6 kB 57%] [Connecting to security.ubuntu.com (185.125.190.82)]
+                                                                                                                
+0% [4 Packages store 0 B] [Connecting to security.ubuntu.com (185.125.190.82)]
+                                                                              
+Get:16 http://ru.archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [5,772 B]
+
+0% [4 Packages store 0 B] [16 Components-amd64 5,772 B/5,772 B 100%] [Connecting to security.ubuntu.com (185.125.190.82)]
+                                                                                                                         
+Get:17 http://ru.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [30.6 kB]
+
+                                                                                                                         
+Get:18 http://ru.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [10.5 kB]
+
+                                                                                                                         
+0% [4 Packages store 0 B] [18 Components-amd64 9,792 B/10.5 kB 93%] [Connecting to security.ubuntu.com (185.125.190.82)]
+                                                                                                                        
+0% [18 Components-amd64 9,792 B/10.5 kB 93%] [Connecting to security.ubuntu.com (185.125.190.82)]
+0% [5 Translation-en store 0 B] [18 Components-amd64 9,792 B/10.5 kB 93%] [Connecting to security.ubuntu.com (185.125.190.82)]
+                                                                                                                              
+0% [5 Translation-en store 0 B] [Connecting to security.ubuntu.com (185.125.190.82)]
+                                                                                    
+0% [Connecting to security.ubuntu.com (91.189.91.81)]
+0% [6 Components-amd64 store 0 B] [Connecting to security.ubuntu.com (91.189.91.81)]
+                                                                                    
+0% [Connecting to security.ubuntu.com (91.189.91.81)]
+0% [7 Commands-amd64 store 0 B] [Connecting to security.ubuntu.com (91.189.91.81)]
+                                                                                  
+0% [Connecting to security.ubuntu.com (91.189.91.81)]
+0% [8 Packages store 0 B] [Connecting to security.ubuntu.com (91.189.91.81)]
+0% [8 Packages store 0 B] [Connecting to security.ubuntu.com (91.189.92.23)]
+                                                                            
+0% [Connecting to security.ubuntu.com (91.189.92.23)]
+0% [9 Translation-en store 0 B] [Connecting to security.ubuntu.com (91.189.92.23)]
+                                                                                  
+0% [Connecting to security.ubuntu.com (91.189.91.83)]
+0% [10 Packages store 0 B] [Connecting to security.ubuntu.com (91.189.91.83)]
+                                                                             
+0% [Connecting to security.ubuntu.com (2620:2d:4000:1::102)]
+0% [11 Translation-en store 0 B] [Connecting to security.ubuntu.com (2620:2d:4000:1::102)]
+                                                                                          
+0% [Connecting to security.ubuntu.com (2620:2d:4000:1::102)]
+0% [12 Components-amd64 store 0 B] [Connecting to security.ubuntu.com (2620:2d:4000:1::102)]
+                                                                                            
+0% [Connecting to security.ubuntu.com (2620:2d:4000:1::102)]
+0% [13 Commands-amd64 store 0 B] [Connecting to security.ubuntu.com (2620:2d:4000:1::102)]
+                                                                                          
+0% [Connecting to security.ubuntu.com (2620:2d:4000:1::102)]
+0% [Connecting to security.ubuntu.com (2620:2d:4000:1::102)]
+0% [15 Packages store 0 B] [Connecting to security.ubuntu.com (2620:2d:4000:1::102)]
+                                                                                    
+0% [Connecting to security.ubuntu.com (2620:2d:4000:1::102)]
+0% [Connecting to security.ubuntu.com (2620:2d:4000:1::102)]
+0% [17 Packages store 0 B] [Connecting to security.ubuntu.com (2620:2d:4000:1::102)]
+                                                                                    
+0% [Connecting to security.ubuntu.com (2620:2d:4000:1::102)]
+0% [18 Components-amd64 store 0 B] [Connecting to security.ubuntu.com (2620:2d:4000:1::102)]
+                                                                                            
+0% [Connecting to security.ubuntu.com (2620:2d:4000:1::102)]
+                                                            
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]                                                                                                                                                       1,403 kB/s 0s
+0% [Waiting for headers]                                                                                                                                                       1,403 kB/s 0s
+0% [Waiting for headers]                                                                                                                                                       1,403 kB/s 0s
+0% [Waiting for headers]                                                                                                                                                       1,403 kB/s 0s
+0% [Waiting for headers]                                                                                                                                                       1,403 kB/s 0s
+0% [Waiting for headers]                                                                                                                                                       1,403 kB/s 0s
+0% [Waiting for headers]                                                                                                                                                       1,403 kB/s 0s
+0% [Waiting for headers]                                                                                                                                                       1,403 kB/s 0s
+0% [Waiting for headers]                                                                                                                                                       1,403 kB/s 0s
+0% [Waiting for headers]                                                                                                                                                       1,403 kB/s 0s
+0% [Waiting for headers]                                                                                                                                                       1,403 kB/s 0s
+0% [Waiting for headers]                                                                                                                                                       1,403 kB/s 0s
+                                                                                                                                                                                            
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+                        
+Get:19 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+
+0% [19 InRelease 5,484 B/126 kB 4%]
+0% [19 InRelease 80.8 kB/126 kB 64%]
+                                    
+0% [Working]
+64% [Working]
+             
+Get:20 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1,651 kB]
+
+64% [20 Packages 2,655 B/1,651 kB 0%]
+65% [20 Packages 263 kB/1,651 kB 16%]
+67% [20 Packages 621 kB/1,651 kB 38%]
+70% [20 Packages 1,257 kB/1,651 kB 76%]
+                                       
+72% [Working]
+72% [20 Packages store 0 B] [Waiting for headers]
+                                                 
+72% [Waiting for headers]
+                         
+Get:21 http://security.ubuntu.com/ubuntu noble-security/main Translation-en [261 kB]
+
+72% [21 Translation-en 11.3 kB/261 kB 4%]
+                                         
+73% [Waiting for headers]
+                         
+Get:22 http://security.ubuntu.com/ubuntu noble-security/main amd64 Components [21.9 kB]
+
+73% [22 Components-amd64 6,192 B/21.9 kB 28%]
+73% [21 Translation-en store 0 B] [22 Components-amd64 6,192 B/21.9 kB 28%]
+                                                                           
+74% [21 Translation-en store 0 B]
+                                 
+Get:23 http://security.ubuntu.com/ubuntu noble-security/main amd64 c-n-f Metadata [11.0 kB]
+
+74% [21 Translation-en store 0 B] [23 Commands-amd64 4,344 B/11.0 kB 39%]
+                                                                         
+Get:24 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [2,906 kB]
+
+                                                                         
+74% [21 Translation-en store 0 B] [24 Packages 1,743 B/2,906 kB 0%]
+                                                                   
+74% [24 Packages 153 kB/2,906 kB 5%]
+74% [22 Components-amd64 store 0 B] [24 Packages 153 kB/2,906 kB 5%]
+                                                                    
+75% [24 Packages 153 kB/2,906 kB 5%]
+75% [23 Commands-amd64 store 0 B] [24 Packages 153 kB/2,906 kB 5%]
+                                                                  
+75% [24 Packages 153 kB/2,906 kB 5%]
+78% [24 Packages 738 kB/2,906 kB 25%]
+80% [24 Packages 1,132 kB/2,906 kB 39%]
+82% [24 Packages 1,645 kB/2,906 kB 57%]
+84% [24 Packages 1,982 kB/2,906 kB 68%]                                                                                                                                          625 kB/s 4s
+85% [24 Packages 2,318 kB/2,906 kB 80%]                                                                                                                                          625 kB/s 4s
+88% [24 Packages 2,803 kB/2,906 kB 96%]                                                                                                                                          625 kB/s 3s
+88% [Waiting for headers]                                                                                                                                                        625 kB/s 3s
+                                                                                                                                                                                            
+Get:25 http://security.ubuntu.com/ubuntu noble-security/restricted Translation-en [680 kB]
+
+88% [25 Translation-en 4,096 B/680 kB 1%]                                                                                                                                        625 kB/s 3s
+88% [24 Packages store 0 B] [25 Translation-en 5,117 B/680 kB 1%]                                                                                                                625 kB/s 3s
+90% [24 Packages store 0 B] [25 Translation-en 293 kB/680 kB 43%]                                                                                                                625 kB/s 3s
+90% [25 Translation-en 293 kB/680 kB 43%]                                                                                                                                        625 kB/s 3s
+92% [Waiting for headers]                                                                                                                                                        625 kB/s 2s
+                                                                                                                                                                                            
+Get:26 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1,182 kB]
+
+92% [26 Packages 7,240 B/1,182 kB 1%]                                                                                                                                            625 kB/s 2s
+92% [25 Translation-en store 0 B] [26 Packages 11.6 kB/1,182 kB 1%]                                                                                                              625 kB/s 2s
+93% [26 Packages 159 kB/1,182 kB 13%]                                                                                                                                            625 kB/s 2s
+94% [26 Packages 498 kB/1,182 kB 42%]                                                                                                                                            625 kB/s 1s
+95% [26 Packages 610 kB/1,182 kB 52%]                                                                                                                                            625 kB/s 1s
+97% [26 Packages 976 kB/1,182 kB 83%]                                                                                                                                            625 kB/s 0s
+98% [Waiting for headers]                                                                                                                                                        625 kB/s 0s
+                                                                                                                                                                                            
+Get:27 http://security.ubuntu.com/ubuntu noble-security/universe Translation-en [227 kB]
+
+98% [27 Translation-en 565 B/227 kB 0%]                                                                                                                                          625 kB/s 0s
+98% [26 Packages store 0 B] [27 Translation-en 565 B/227 kB 0%]                                                                                                                  625 kB/s 0s
+98% [27 Translation-en 77.2 kB/227 kB 34%]                                                                                                                                       625 kB/s 0s
+99% [Waiting for headers]                                                                                                                                                        625 kB/s 0s
+                                                                                                                                                                                            
+Get:28 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Components [74.2 kB]
+
+99% [28 Components-amd64 56.1 kB/74.2 kB 76%]                                                                                                                                    625 kB/s 0s
+                                                                                                                                                                                            
+Get:29 http://security.ubuntu.com/ubuntu noble-security/universe amd64 c-n-f Metadata [23.1 kB]
+
+100% [27 Translation-en store 0 B]                                                                                                                                               625 kB/s 0s
+100% [Working]                                                                                                                                                                   625 kB/s 0s
+100% [28 Components-amd64 store 0 B]                                                                                                                                             625 kB/s 0s
+100% [Working]                                                                                                                                                                   625 kB/s 0s
+100% [29 Commands-amd64 store 0 B]                                                                                                                                               625 kB/s 0s
+100% [Working]                                                                                                                                                                   625 kB/s 0s
+                                                                                                                                                                                            
+Fetched 16.3 MB in 42s (388 kB/s)
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 2%
+
+Reading package lists... 2%
+
+Reading package lists... 4%
+
+Reading package lists... 4%
+
+Reading package lists... 4%
+
+Reading package lists... 4%
+
+Reading package lists... 4%
+
+Reading package lists... 4%
+
+Reading package lists... 26%
+
+Reading package lists... 34%
+
+Reading package lists... 34%
+
+Reading package lists... 48%
+
+Reading package lists... 48%
+
+Reading package lists... 48%
+
+Reading package lists... 48%
+
+Reading package lists... 49%
+
+Reading package lists... 49%
+
+Reading package lists... 53%
+
+Reading package lists... 53%
+
+Reading package lists... 56%
+
+Reading package lists... 56%
+
+Reading package lists... 64%
+
+Reading package lists... 64%
+
+Reading package lists... 65%
+
+Reading package lists... 69%
+
+Reading package lists... 69%
+
+Reading package lists... 74%
+
+Reading package lists... 74%
+
+Reading package lists... 75%
+
+Reading package lists... 75%
+
+Reading package lists... 75%
+
+Reading package lists... 75%
+
+Reading package lists... 75%
+
+Reading package lists... 75%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 82%
+
+Reading package lists... 82%
+
+Reading package lists... 90%
+
+Reading package lists... 90%
+
+Reading package lists... 95%
+
+Reading package lists... 95%
+
+Reading package lists... 98%
+
+Reading package lists... 98%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... Done
+
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree... Done
+
+
+Reading state information... 0% 
+
+Reading state information... 0%
+
+Reading state information... Done
+
+94 packages can be upgraded. Run 'apt list --upgradable' to see them.
+root@eltex-practice2-pg1-v13:~# apt install ghghightgh gh
+
+
+Reading package lists... 0%
+
+Reading package lists... 100%
+
+Reading package lists... Done
+
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree... Done
+
+
+Reading state information... 0% 
+
+Reading state information... 0%
+
+Reading state information... Done
+
+git is already the newest version (1:2.43.0-1ubuntu7.3).
+git set to manually installed.
+The following NEW packages will be installed:
+  gh
+0 upgraded, 1 newly installed, 0 to remove and 94 not upgraded.
+Need to get 8,836 kB of archives.
+After this operation, 45.4 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+
+0% [Working]
+            
+Get:1 http://ru.archive.ubuntu.com/ubuntu noble-updates/universe amd64 gh amd64 2.45.0-1ubuntu0.3 [8,836 kB]
+
+0% [1 gh 4,502 B/8,836 kB 0%]
+51% [1 gh 5,617 kB/8,836 kB 64%]
+                                
+100% [Working]
+              
+Fetched 8,836 kB in 1s (9,771 kB/s)
+
+Selecting previously unselected package gh.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 125716 files and directories currently installed.)
+Preparing to unpack .../gh_2.45.0-1ubuntu0.3_amd64.deb ...
+Progress: [  0%] [.......................................................................................................................................................................] Progress: [ 20%] [#################################......................................................................................................................................] Unpacking gh (2.45.0-1ubuntu0.3) ...
+Progress: [ 40%] [##################################################################.....................................................................................................] Setting up gh (2.45.0-1ubuntu0.3) ...
+Progress: [ 60%] [####################################################################################################...................................................................] Progress: [ 80%] [#####################################################################################################################################..................................] Processing triggers for man-db (2.12.0-4build2) ...
+
+Scanning processes... [                                                                                                                                                                     ]
+Scanning processes... [=                                                                                                                                                                    ]
+Scanning processes... [==                                                                                                                                                                   ]
+Scanning processes... [====                                                                                                                                                                 ]
+Scanning processes... [=====                                                                                                                                                                ]
+Scanning processes... [=======                                                                                                                                                              ]
+Scanning processes... [========                                                                                                                                                             ]
+Scanning processes... [==========                                                                                                                                                           ]
+Scanning processes... [===========                                                                                                                                                          ]
+Scanning processes... [=============                                                                                                                                                        ]
+Scanning processes... [==============                                                                                                                                                       ]
+Scanning processes... [================                                                                                                                                                     ]
+Scanning processes... [=================                                                                                                                                                    ]
+Scanning processes... [==================                                                                                                                                                   ]
+Scanning processes... [====================                                                                                                                                                 ]
+Scanning processes... [=====================                                                                                                                                                ]
+Scanning processes... [=======================                                                                                                                                              ]
+Scanning processes... [========================                                                                                                                                             ]
+Scanning processes... [==========================                                                                                                                                           ]
+Scanning processes... [===========================                                                                                                                                          ]
+Scanning processes... [=============================                                                                                                                                        ]
+Scanning processes... [==============================                                                                                                                                       ]
+Scanning processes... [================================                                                                                                                                     ]
+Scanning processes... [=================================                                                                                                                                    ]
+Scanning processes... [===================================                                                                                                                                  ]
+Scanning processes... [====================================                                                                                                                                 ]
+Scanning processes... [=====================================                                                                                                                                ]
+Scanning processes... [=======================================                                                                                                                              ]
+Scanning processes... [========================================                                                                                                                             ]
+Scanning processes... [==========================================                                                                                                                           ]
+Scanning processes... [===========================================                                                                                                                          ]
+Scanning processes... [=============================================                                                                                                                        ]
+Scanning processes... [==============================================                                                                                                                       ]
+Scanning processes... [================================================                                                                                                                     ]
+Scanning processes... [=================================================                                                                                                                    ]
+Scanning processes... [===================================================                                                                                                                  ]
+Scanning processes... [====================================================                                                                                                                 ]
+Scanning processes... [======================================================                                                                                                               ]
+Scanning processes... [=======================================================                                                                                                              ]
+Scanning processes... [========================================================                                                                                                             ]
+Scanning processes... [==========================================================                                                                                                           ]
+Scanning processes... [===========================================================                                                                                                          ]
+Scanning processes... [=============================================================                                                                                                        ]
+Scanning processes... [==============================================================                                                                                                       ]
+Scanning processes... [================================================================                                                                                                     ]
+Scanning processes... [=================================================================                                                                                                    ]
+Scanning processes... [===================================================================                                                                                                  ]
+Scanning processes... [====================================================================                                                                                                 ]
+Scanning processes... [======================================================================                                                                                               ]
+Scanning processes... [=======================================================================                                                                                              ]
+Scanning processes... [=========================================================================                                                                                            ]
+Scanning processes... [==========================================================================                                                                                           ]
+Scanning processes... [===========================================================================                                                                                          ]
+Scanning processes... [=============================================================================                                                                                        ]
+Scanning processes... [==============================================================================                                                                                       ]
+Scanning processes... [================================================================================                                                                                     ]
+Scanning processes... [=================================================================================                                                                                    ]
+Scanning processes... [===================================================================================                                                                                  ]
+Scanning processes... [====================================================================================                                                                                 ]
+Scanning processes... [======================================================================================                                                                               ]
+Scanning processes... [=======================================================================================                                                                              ]
+Scanning processes... [=========================================================================================                                                                            ]
+Scanning processes... [==========================================================================================                                                                           ]
+Scanning processes... [===========================================================================================                                                                          ]
+Scanning processes... [=============================================================================================                                                                        ]
+Scanning processes... [==============================================================================================                                                                       ]
+Scanning processes... [================================================================================================                                                                     ]
+Scanning processes... [=================================================================================================                                                                    ]
+Scanning processes... [===================================================================================================                                                                  ]
+Scanning processes... [====================================================================================================                                                                 ]
+Scanning processes... [======================================================================================================                                                               ]
+Scanning processes... [=======================================================================================================                                                              ]
+Scanning processes... [=========================================================================================================                                                            ]
+Scanning processes... [==========================================================================================================                                                           ]
+Scanning processes... [============================================================================================================                                                         ]
+Scanning processes... [=============================================================================================================                                                        ]
+Scanning processes... [==============================================================================================================                                                       ]
+Scanning processes... [================================================================================================================                                                     ]
+Scanning processes... [=================================================================================================================                                                    ]
+Scanning processes... [===================================================================================================================                                                  ]
+Scanning processes... [====================================================================================================================                                                 ]
+Scanning processes... [======================================================================================================================                                               ]
+Scanning processes... [=======================================================================================================================                                              ]
+Scanning processes... [=========================================================================================================================                                            ]
+Scanning processes... [==========================================================================================================================                                           ]
+Scanning processes... [============================================================================================================================                                         ]
+Scanning processes... [=============================================================================================================================                                        ]
+Scanning processes... [===============================================================================================================================                                      ]
+Scanning processes... [================================================================================================================================                                     ]
+Scanning processes... [=================================================================================================================================                                    ]
+Scanning processes... [===================================================================================================================================                                  ]
+Scanning processes... [====================================================================================================================================                                 ]
+Scanning processes... [======================================================================================================================================                               ]
+Scanning processes... [=======================================================================================================================================                              ]
+Scanning processes... [=========================================================================================================================================                            ]
+Scanning processes... [==========================================================================================================================================                           ]
+Scanning processes... [============================================================================================================================================                         ]
+Scanning processes... [=============================================================================================================================================                        ]
+Scanning processes... [===============================================================================================================================================                      ]
+Scanning processes... [================================================================================================================================================                     ]
+Scanning processes... [==================================================================================================================================================                   ]
+Scanning processes... [===================================================================================================================================================                  ]
+Scanning processes... [====================================================================================================================================================                 ]
+Scanning processes... [======================================================================================================================================================               ]
+Scanning processes... [=======================================================================================================================================================              ]
+Scanning processes... [=========================================================================================================================================================            ]
+Scanning processes... [==========================================================================================================================================================           ]
+Scanning processes... [============================================================================================================================================================         ]
+Scanning processes... [=============================================================================================================================================================        ]
+Scanning processes... [===============================================================================================================================================================      ]
+Scanning processes... [================================================================================================================================================================     ]
+Scanning processes... [==================================================================================================================================================================   ]
+Scanning processes... [===================================================================================================================================================================  ]
+Scanning processes... [=====================================================================================================================================================================]
+Scanning processes...                                                                                                                                                                        
+Scanning candidates... [                                                                                                                                                                    ]
+Scanning candidates... [====================================================================================================================================================================]
+Scanning candidates...                                                                                                                                                                       
+Scanning linux images... [                                                                                                                                                                  ]
+Scanning linux images... [========================================                                                                                                                          ]
+Scanning linux images... [=================================================================================                                                                                 ]
+Scanning linux images... [=========================================================================================================================                                         ]
+Scanning linux images... [==================================================================================================================================================================]
+Scanning linux images...                                                                                                                                                                     
+
+Running kernel seems to be up-to-date.
+
+Restarting services...
+
+Service restarts being deferred:
+ systemctl restart systemd-logind.service
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+root@eltex-practice2-pg1-v13:~# ssh-keygen -t ed25519 -f ~/.ssh/ivifia
+
+Generating public/private ed25519 key pair.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/ivifia
+Your public key has been saved in /root/.ssh/ivifia.pub
+The key fingerprint is:
+SHA256:iwKRNtm2B0l3kQYcggCV7x6qPLa9J/iec1c7hLk3wUs root@eltex-practice2-pg1-v13
+The key's randomart image is:
++--[ED25519 256]--+
+|+o.oo.+ooo       |
+|  o= +..o        |
+|  *.=  .         |
+| . +.o           |
+|  ... . S        |
+|   .o. + E       |
+|  .o... * +      |
+|.+ooo+ o *       |
+|o+=** . . o      |
++----[SHA256]-----+
+root@eltex-practice2-pg1-v13:~# gh auth login
+
+? What account do you want to log into?  [Use arrows to move, type to filter]
+> GitHub.com
+  GitHub Enterprise Server
+? What account do you want to log into?  [Use arrows to move, type to filter]
+  GitHub.com
+> GitHub Enterprise Server
+? What account do you want to log into?  [Use arrows to move, type to filter]
+> GitHub.com
+  GitHub Enterprise Server
+? What account do you want to log into? GitHub.com
+? What is your preferred protocol for Git operations on this host?  [Use arrows to move, type to filter]
+> HTTPS
+  SSH
+? What is your preferred protocol for Git operations on this host?  [Use arrows to move, type to filter]
+  HTTPS
+> SSH
+? What is your preferred protocol for Git operations on this host? SSH
+? Upload your SSH public key to your GitHub account?  [Use arrows to move, type to filter]
+> /root/.ssh/ivifia.pub
+  Skip
+? Upload your SSH public key to your GitHub account? /root/.ssh/ivifia.pub
+? Title for your SSH key: (GitHub CLI) eltex-practice2-pg1-v13? Title for your SSH key: eltex-practice2-pg1-v13
+? How would you like to authenticate GitHub CLI?  [Use arrows to move, type to filter]
+> Login with a web browser
+  Paste an authentication token
+? How would you like to authenticate GitHub CLI? Login with a web browser
+
+! First copy your one-time code: 6323-B787
+Press Enter to open github.com in your browser... 
+! Failed opening a web browser at https://github.com/login/device
+  exec: "xdg-open,x-www-browser,www-browser,wslview": executable file not found in $PATH
+  Please try entering the URL in your browser manually
+ Authentication complete.
+- gh config set -h github.com git_protocol ssh
+ Configured git protocol
+! Authentication credentials saved in plain text
+ Uploaded the SSH key to your GitHub account: /root/.ssh/ivifia.pub
+ Logged in as ivifia
+root@eltex-practice2-pg1-v13:~#  gh auth setup-git --hostname github.com
+
+root@eltex-practice2-pg1-v13:~# gh auth status
+
+github.com
+   Logged in to github.com account ivifia (/root/.config/gh/hosts.yml)
+  - Active account: true
+  - Git operations protocol: ssh
+  - Token: gho_************************************
+  - Token scopes: 'admin:public_key', 'gist', 'read:org', 'repo'
+root@eltex-practice2-pg1-v13:~# gh repo create --public m1_pr2_3
+
+ Created repository ivifia/m1_pr2 on GitHub
+  https://github.com/ivifia/m1_pr2
+root@eltex-practice2-pg1-v13:~# mkdir ~/m1_pr2 && cd ~/m1_pr2
+
+root@eltex-practice2-pg1-v13:~/m1_pr2# echo ""#" """""""""""" """"""""""" """"" """" """"""""""""""" """"""""" """ """""""""" """"""" >>readme README.md
+
+root@eltex-practice2-pg1-v13:~/m1_pr2# git init
+
+Initialized empty Git repository in /root/m1_pr2/.git/
+root@eltex-practice2-pg1-v13:~/m1_pr2# git add README.md 
+
+root@eltex-practice2-pg1-v13:~/m1_pr2# git commit -m ''""f"i"r"s"t" "c"o"m"m"i"t"
+
+[main (root-commit) f55f5df] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+root@eltex-practice2-pg1-v13:~/m1_pr2# git branch -M main
+
+root@eltex-practice2-pg1-v13:~/m1_pr2# git remote add origin https://github.com/ivifia/m1_pr2.githttps://github.com/ivifia/m1_pr2.git
+
+root@eltex-practice2-pg1-v13:~/m1_pr2# git status
+
+On branch main
+nothing to commit, working tree clean
+root@eltex-practice2-pg1-v13:~/m1_pr2# git push -u origin main
+
+Enumerating objects: 3, done.
+Counting objects:  33% (1/3)
+Counting objects:  66% (2/3)
+Counting objects: 100% (3/3)
+Counting objects: 100% (3/3), done.
+Delta compression using up to 2 threads
+Compressing objects:  50% (1/2)
+Compressing objects: 100% (2/2)
+Compressing objects: 100% (2/2), done.
+Writing objects:  33% (1/3)
+Writing objects:  66% (2/3)
+Writing objects: 100% (3/3)
+Writing objects: 100% (3/3), 297 bytes | 297.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ivifia/m1_pr2.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+root@eltex-practice2-pg1-v13:~/m1_pr2# mkdir =-p module1/task1
+
+root@eltex-practice2-pg1-v13:~/m1_pr2# mkdir -p module1/task12module1/task2module1/task2module1/task2module1/task2 module1/task2
+
+root@eltex-practice2-pg1-v13:~/m1_pr2# mkdir module1/task23
+
+root@eltex-practice2-pg1-v13:~/m1_pr2# logout
+
+Connection to 172.16.9.187 closed.
+
+eltex-pg1-v13@eltex-2026-spring-12:50>ls
+
+2026-01  2026-03  2026-05  2026-07  2026-09  2026-11  D1                       eltex-pg1-v13_part.log             practice2_eltex-pg1-v13_part2.log
+2026-02  2026-04  2026-06  2026-08  2026-10  2026-12  eltex-pg1-v13_part3.log  practice2_eltex-pg1-v13_part1.log  report_part1.txt
+eltex-pg1-v13@eltex-2026-spring-12:50>pwd
+
+/home/eltex-pg1-v13
+eltex-pg1-v13@eltex-2026-spring-12:50>pwdlsssh root@172.16.9.187
+
+Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-110-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Tue May  5 06:13:53 AM UTC 2026
+
+  System load:  0.0                Processes:              113
+  Usage of /:   42.9% of 14.66GB   Users logged in:        0
+  Memory usage: 7%                 IPv4 address for ens18: 172.16.9.187
+  Swap usage:   0%
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+Expanded Security Maintenance for Applications is not enabled.
+
+100 updates can be applied immediately.
+16 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+2 additional security updates can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+
+bakuk aleksandr
+Last login: Tue May  5 05:55:03 2026 from 172.16.8.4
+
+root@eltex-practice2-pg1-v13:~# pwd
+
+/root
+root@eltex-practice2-pg1-v13:~# cd ~/
+.cache/          comp_test/       .config/         etc_backup/      etc_backup_7zip/ etc_backup_gzip/ .local/          m1_pr2/          .ssh/            
+root@eltex-practice2-pg1-v13:~# cd ~/
+.cache/          comp_test/       .config/         etc_backup/      etc_backup_7zip/ etc_backup_gzip/ .local/          m1_pr2/          .ssh/            
+root@eltex-practice2-pg1-v13:~# cd ~/m1_pr2/
+
+root@eltex-practice2-pg1-v13:~/m1_pr2# ls
+
+module1  README.md
+root@eltex-practice2-pg1-v13:~/m1_pr2# cd module1/
+
+root@eltex-practice2-pg1-v13:~/m1_pr2/module1# ls
+
+task1  task2  task3
+root@eltex-practice2-pg1-v13:~/m1_pr2/module1# cd task1
+
+root@eltex-practice2-pg1-v13:~/m1_pr2/module1/task1# ls
+
+root@eltex-practice2-pg1-v13:~/m1_pr2/module1/task1# scp logoutlogout
+
+Connection to 172.16.9.187 closed.
+
+eltex-pg1-v13@eltex-2026-spring-12:50>scp eltex-_pg1ls
+
+2026-01  2026-03  2026-05  2026-07  2026-09  2026-11  D1                       eltex-pg1-v13_part.log             practice2_eltex-pg1-v13_part2.log
+2026-02  2026-04  2026-06  2026-08  2026-10  2026-12  eltex-pg1-v13_part3.log  practice2_eltex-pg1-v13_part1.log  report_part1.txt
+eltex-pg1-v13@eltex-2026-spring-12:50>scp eltex-
+eltex-2026-spring:        eltex-pg1-v13_part3.log   eltex-pg1-v13_part.log    
+eltex-pg1-v13@eltex-2026-spring-12:50>scp eltex-
+eltex-2026-spring:        eltex-pg1-v13_part3.log   eltex-pg1-v13_part.log    
+eltex-pg1-v13@eltex-2026-spring-12:50>scp eltex-pg1-v13_part.log root@172.16.9.187 /~/m1_pr2/module1/task1
+
+/home/eltex-pg1-v13/m1_pr2/module1/task1: No such file or directory
+eltex-pg1-v13@eltex-2026-spring-12:50>scp eltex-pg1-v13_part.log root@172.16.9.187 ~/m1_pr2/module1/task1~/m1_pr2/module1/task1:~/m1_pr2/module1/task1
+
+
+eltex-pg1-v13_part.log                                                                                                                                       0%    0     0.0KB/s   --:-- ETA
+eltex-pg1-v13_part.log                                                                                                                                     100%   17KB   4.3MB/s   00:00    
+eltex-pg1-v13@eltex-2026-spring-12:50>scp eltex-pg1-v13_part.log root@172.16.9.187:~/m1_pr2/module1/task13
+
+
+eltex-pg1-v13_part3.log                                                                                                                                      0%    0     0.0KB/s   --:-- ETA
+eltex-pg1-v13_part3.log                                                                                                                                    100% 2424KB  35.8MB/s   00:00    
+eltex-pg1-v13@eltex-2026-spring-12:50>scp eltex-pg1-v13_part3.log root@172.16.9.187:~/m1_pr2/module1/task1 root@172.16.9.187:~/m1_pr2/module1/task1 root@172.16.9.187:~/m1_pr2/module1/task1 root@172.16.9.187:~/m1_pr2/module1/task1 root@172.16.9.187:~/m1_pr2/module1/task1 root@172.16.9.187:~/m1_pr2/module1/task1 root@172.16.9.187:~/m1_pr2/module1/task1 root@172.16.9.187:~/m1_pr2/module1/task1 root@172.16.9.187:~/m1_pr2/module1/task1 root@172.16.9.187:~/m1_pr2/module1/task1 root@172.16.9.187:~/m1_pr2/module1/task1 root@172.16.9.187:~/m1_pr2/module1/task1 root@172.16.9.187:~/m1_pr2/module1/task1 root@172.16.9.187:~/m1_pr2/module1/task1 root@172.16.9.187:~/m1_pr2/module1/task1 root@172.16.9.187:~/m1_pr2/module1/task1 root@172.16.9.187:~/m1_pr2/module1/task1 root@172.16.9.187:~/m1_pr2/module1/task1 root@172.16.9.187:~/m1_pr2/module1/task1 root@172.16.9.187:~/m1_pr2/module1/task1 root@172.16.9.187:~/m1_pr2/module1/task1 root@172.16.9.187:~/m1_pr2/module1/task1 root@172.16.9.187:~/m1_pr2/module1/task1 root@172.16.9.187:~/m1_pr2/module1/task1p root@172.16.9.187:~/m1_pr2/module1/task1r root@172.16.9.187:~/m1_pr2/module1/task1a root@172.16.9.187:~/m1_pr2/module1/task1c root@172.16.9.187:~/m1_pr2/module1/task1tice2_eltex-pg1-v13_part root@172.16.9.187:~/m1_pr2/module1/task11 root@172.16.9.187:~/m1_pr2/module1/task1.log  root@172.16.9.187:~/m1_pr2/module1/task12
+
+
+practice2_eltex-pg1-v13_part1.log                                                                                                                            0%    0     0.0KB/s   --:-- ETA
+practice2_eltex-pg1-v13_part1.log                                                                                                                          100%  483KB  36.4MB/s   00:00    
+eltex-pg1-v13@eltex-2026-spring-12:50>scp practice2_eltex-pg1-v13_part1.log  root@172.16.9.187:~/m1_pr2/module1/task22
+
+
+practice2_eltex-pg1-v13_part2.log                                                                                                                            0%    0     0.0KB/s   --:-- ETA
+practice2_eltex-pg1-v13_part2.log                                                                                                                          100%  427KB  35.5MB/s   00:00    
+eltex-pg1-v13@eltex-2026-spring-12:50>git add .
+
+-bash: git: command not found
+eltex-pg1-v13@eltex-2026-spring-12:50>ssh root@2172.16.9.187
+
+Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-110-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Tue May  5 06:20:34 AM UTC 2026
+
+  System load:  0.97               Processes:              118
+  Usage of /:   46.7% of 14.66GB   Users logged in:        0
+  Memory usage: 12%                IPv4 address for ens18: 172.16.9.187
+  Swap usage:   0%
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+Expanded Security Maintenance for Applications is not enabled.
+
+84 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+2 additional security updates can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+
+*** System restart required ***
+bakuk aleksandr
+Last login: Tue May  5 06:13:53 2026 from 172.16.8.4
+
+root@eltex-practice2-pg1-v13:~# cd ~/
+.cache/          comp_test/       .config/         etc_backup/      etc_backup_7zip/ etc_backup_gzip/ .local/          m1_pr2/          .ssh/            
+root@eltex-practice2-pg1-v13:~# cd ~/m1_pr2/
+
+root@eltex-practice2-pg1-v13:~/m1_pr2# ls
+
+module1  README.md
+root@eltex-practice2-pg1-v13:~/m1_pr2# git add .
+
+root@eltex-practice2-pg1-v13:~/m1_pr2# git status
+
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+new file:   module1/task1/eltex-pg1-v13_part.log
+new file:   module1/task1/eltex-pg1-v13_part3.log
+new file:   module1/task2/practice2_eltex-pg1-v13_part1.log
+new file:   module1/task2/practice2_eltex-pg1-v13_part2.log
+
+root@eltex-practice2-pg1-v13:~/m1_pr2# git commit '''''' ''' ''''''' ' ''' ''''''' '''''''''''
+
+error: pathspec '     ' did not match any file(s) known to git
+root@eltex-practice2-pg1-v13:~/m1_pr2# git commit '     '-m 
+
+[main d7b903d]      
+ 4 files changed, 88386 insertions(+)
+ create mode 100644 module1/task1/eltex-pg1-v13_part.log
+ create mode 100644 module1/task1/eltex-pg1-v13_part3.log
+ create mode 100644 module1/task2/practice2_eltex-pg1-v13_part1.log
+ create mode 100644 module1/task2/practice2_eltex-pg1-v13_part2.log
+root@eltex-practice2-pg1-v13:~/m1_pr2# git push
+
+Enumerating objects: 10, done.
+Counting objects:  10% (1/10)
+Counting objects:  20% (2/10)
+Counting objects:  30% (3/10)
+Counting objects:  40% (4/10)
+Counting objects:  50% (5/10)
+Counting objects:  60% (6/10)
+Counting objects:  70% (7/10)
+Counting objects:  80% (8/10)
+Counting objects:  90% (9/10)
+Counting objects: 100% (10/10)
+Counting objects: 100% (10/10), done.
+Delta compression using up to 2 threads
+Compressing objects:  11% (1/9)
+Compressing objects:  22% (2/9)
+Compressing objects:  33% (3/9)
+Compressing objects:  44% (4/9)
+Compressing objects:  55% (5/9)
+Compressing objects:  66% (6/9)
+Compressing objects:  77% (7/9)
+Compressing objects:  88% (8/9)
+Compressing objects: 100% (9/9)
+Compressing objects: 100% (9/9), done.
+Writing objects:  11% (1/9)
+Writing objects:  22% (2/9)
+Writing objects:  33% (3/9)
+Writing objects:  44% (4/9)
+Writing objects:  55% (5/9)
+Writing objects:  66% (6/9)
+Writing objects:  77% (7/9)
+Writing objects:  88% (8/9)
+Writing objects: 100% (9/9)
+Writing objects: 100% (9/9), 354.69 KiB | 4.22 MiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ivifia/m1_pr2.git
+   f55f5df..d7b903d  main -> main
+root@eltex-practice2-pg1-v13:~/m1_pr2# mkdir ~/m1_prls
+
+module1  README.md
+root@eltex-practice2-pg1-v13:~/m1_pr2# cd ..
+
+root@eltex-practice2-pg1-v13:~# ls
+
+comp_test  etc_backup  etc_backup_7zip  etc_backup_gzip  etc_backup.tar  etc_backup.tar.bz2  etc_backup.tar.gz  etc_bacup.7z  m1_pr2
+root@eltex-practice2-pg1-v13:~# cd ~/
+
+root@eltex-practice2-pg1-v13:~# ls
+
+comp_test  etc_backup  etc_backup_7zip  etc_backup_gzip  etc_backup.tar  etc_backup.tar.bz2  etc_backup.tar.gz  etc_bacup.7z  m1_pr2
+root@eltex-practice2-pg1-v13:~# mv m1_pr2/ cd m1_pr2/
+
+root@eltex-practice2-pg1-v13:~/m1_pr2# ls
+
+module1  README.md
+root@eltex-practice2-pg1-v13:~/m1_pr2# cd ..
+
+root@eltex-practice2-pg1-v13:~# mv m1_pr2/ m1
+
+root@eltex-practice2-pg1-v13:~# ls
+
+comp_test  etc_backup  etc_backup_7zip  etc_backup_gzip  etc_backup.tar  etc_backup.tar.bz2  etc_backup.tar.gz  etc_bacup.7z  m1
+root@eltex-practice2-pg1-v13:~# cd m1
+
+root@eltex-practice2-pg1-v13:~/m1# ls
+
+module1  README.md
+root@eltex-practice2-pg1-v13:~/m1# git status
+
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+root@eltex-practice2-pg1-v13:~/m1# mkdir ~/m1_clone %&& cd ~/m1_clone
+
+root@eltex-practice2-pg1-v13:~/m1_clone# git clone ls
+
+fatal: repository 'ls' does not exist
+root@eltex-practice2-pg1-v13:~/m1_clone# ls
+
+root@eltex-practice2-pg1-v13:~/m1_clone# cd ..
+
+root@eltex-practice2-pg1-v13:~# ls
+
+comp_test  etc_backup  etc_backup_7zip  etc_backup_gzip  etc_backup.tar  etc_backup.tar.bz2  etc_backup.tar.gz  etc_bacup.7z  m1  m1_clone
+root@eltex-practice2-pg1-v13:~# mv m1 m1_pr2
+
+root@eltex-practice2-pg1-v13:~# mv m1_clone/ m1_pr2_clone
+
+root@eltex-practice2-pg1-v13:~# cd m1_pr2_clone/
+
+root@eltex-practice2-pg1-v13:~/m1_pr2_clone# ls
+
+root@eltex-practice2-pg1-v13:~/m1_pr2_clone# git clone ^[[200~https://github.com/ivifia/m1_pr2.git~https://github.com/ivifia/m1_pr2.githttps://github.com/ivifia/m1_pr2.githttps://github.com/ivifia/m1_pr2.githttps://github.com/ivifia/m1_pr2.githttps://github.com/ivifia/m1_pr2.githttps://github.com/ivifia/m1_pr2.githttps://github.com/ivifia/m1_pr2.git https://github.com/ivifia/m1_pr2.git
+
+Cloning into 'm1_pr2'...
+remote: Enumerating objects: 12, done.
+remote: Counting objects:   8% (1/12)
+remote: Counting objects:  16% (2/12)
+remote: Counting objects:  25% (3/12)
+remote: Counting objects:  33% (4/12)
+remote: Counting objects:  41% (5/12)
+remote: Counting objects:  50% (6/12)
+remote: Counting objects:  58% (7/12)
+remote: Counting objects:  66% (8/12)
+remote: Counting objects:  75% (9/12)
+remote: Counting objects:  83% (10/12)
+remote: Counting objects:  91% (11/12)
+remote: Counting objects: 100% (12/12)
+remote: Counting objects: 100% (12/12), done.
+remote: Compressing objects:   9% (1/11)
+remote: Compressing objects:  18% (2/11)
+remote: Compressing objects:  27% (3/11)
+remote: Compressing objects:  36% (4/11)
+remote: Compressing objects:  45% (5/11)
+remote: Compressing objects:  54% (6/11)
+remote: Compressing objects:  63% (7/11)
+remote: Compressing objects:  72% (8/11)
+remote: Compressing objects:  81% (9/11)
+remote: Compressing objects:  90% (10/11)
+remote: Compressing objects: 100% (11/11)
+remote: Compressing objects: 100% (11/11), done.
+Receiving objects:   8% (1/12)
+Receiving objects:  16% (2/12)
+Receiving objects:  25% (3/12)
+Receiving objects:  33% (4/12)
+Receiving objects:  41% (5/12)
+Receiving objects:  50% (6/12)
+Receiving objects:  58% (7/12)
+Receiving objects:  66% (8/12)
+Receiving objects:  75% (9/12)
+remote: Total 12 (delta 0), reused 12 (delta 0), pack-reused 0 (from 0)
+Receiving objects:  83% (10/12)
+Receiving objects:  91% (11/12)
+Receiving objects: 100% (12/12)
+Receiving objects: 100% (12/12), 354.95 KiB | 752.00 KiB/s, done.
+root@eltex-practice2-pg1-v13:~/m1_pr2_clone# cd ..
+
+root@eltex-practice2-pg1-v13:~# ls
+
+comp_test  etc_backup  etc_backup_7zip  etc_backup_gzip  etc_backup.tar  etc_backup.tar.bz2  etc_backup.tar.gz  etc_bacup.7z  m1_pr2  m1_pr2_clone
+root@eltex-practice2-pg1-v13:~# cd m1_pr2
+
+root@eltex-practice2-pg1-v13:~/m1_pr2# ls
+
+module1  README.md
+root@eltex-practice2-pg1-v13:~/m1_pr2# git status
+
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+root@eltex-practice2-pg1-v13:~/m1_pr2# git add .
+
+root@eltex-practice2-pg1-v13:~/m1_pr2# git costatus
+
+Command 'gitstatus' not found, did you mean:
+  command 'mgitstatus' from deb mgitstatus (2.2+dfsg-2)
+Try: apt install <deb name>
+root@eltex-practice2-pg1-v13:~/m1_pr2# gitstatus status
+
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+root@eltex-practice2-pg1-v13:~/m1_pr2# cd ..
+
+root@eltex-practice2-pg1-v13:~# cd m1_pr2_clone/
+
+root@eltex-practice2-pg1-v13:~/m1_pr2_clone# ls
+
+m1_pr2
+root@eltex-practice2-pg1-v13:~/m1_pr2_clone# git status
+
+fatal: not a git repository (or any of the parent directories): .git
+root@eltex-practice2-pg1-v13:~/m1_pr2_clone# cd m1_pr2/
+
+root@eltex-practice2-pg1-v13:~/m1_pr2_clone/m1_pr2# git status
+
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+root@eltex-practice2-pg1-v13:~/m1_pr2_clone/m1_pr2# git fetch 
+
+root@eltex-practice2-pg1-v13:~/m1_pr2_clone/m1_pr2# git log orogin/main
+
+fatal: ambiguous argument 'orogin/main': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+root@eltex-practice2-pg1-v13:~/m1_pr2_clone/m1_pr2# git log orogin/mainin/mainin/maingn/main
+
+fatal: ambiguous argument 'orign/main': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+root@eltex-practice2-pg1-v13:~/m1_pr2_clone/m1_pr2# git log orign/mainin/main
+
+
+commit d7b903d7380f40a1fdbfb92a9f2d1e6d89806bc0 (HEAD -> main, origin/main, origin/HEAD)
+Author: ivifia <bakuksasha@gmail.com>
+Date:   Tue May 5 06:22:45 2026 +0000
+
+         
+
+commit f55f5df3863600c768c2c36f36d4b65d7993bbe3
+Author: ivifia <bakuksasha@gmail.com>
+Date:   Tue May 5 06:08:33 2026 +0000
+
+    first commit
+
+root@eltex-practice2-pg1-v13:~/m1_pr2_clone/m1_pr2# git merge
+
+Already up to date.
+root@eltex-practice2-pg1-v13:~/m1_pr2_clone/m1_pr2# git pull
+
+Already up to date.
+root@eltex-practice2-pg1-v13:~/m1_pr2_clone/m1_pr2# gitlogout
+
+Connection to 172.16.9.187 closed.
+
+eltex-pg1-v13@eltex-2026-spring-12:50>ls
+
+2026-01  2026-03  2026-05  2026-07  2026-09  2026-11  D1                       eltex-pg1-v13_part.log             practice2_eltex-pg1-v13_part2.log
+2026-02  2026-04  2026-06  2026-08  2026-10  2026-12  eltex-pg1-v13_part3.log  practice2_eltex-pg1-v13_part1.log  report_part1.txt
+eltex-pg1-v13@eltex-2026-spring-12:50>touch 
