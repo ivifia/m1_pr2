@@ -1,0 +1,370 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2026.03.24 17:45:41 =~=~=~=~=~=~=~=~=~=~=~=
+cat ~/.bashrc
+
+# ~/.bashrc: executed by bash(1) for non-login shells.
+# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
+# for examples
+
+# If not running interactively, don't do anything
+case $- in
+    *i*) ;;
+      *) return;;
+esac
+
+# don't put duplicate lines or lines starting with space in the history.
+# See bash(1) for more options
+HISTCONTROL=ignoreboth
+
+# append to the history file, don't overwrite it
+shopt -s histappend
+
+# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+HISTSIZE=1000
+HISTFILESIZE=2000
+
+# check the window size after each command and, if necessary,
+# update the values of LINES and COLUMNS.
+shopt -s checkwinsize
+
+# If set, the pattern "**" used in a pathname expansion context will
+# match all files and zero or more directories and subdirectories.
+#shopt -s globstar
+
+# make less more friendly for non-text input files, see lesspipe(1)
+#[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+
+# set variable identifying the chroot you work in (used in the prompt below)
+if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
+    debian_chroot=$(cat /etc/debian_chroot)
+fi
+
+# set a fancy prompt (non-color, unless we know we "want" color)
+case "$TERM" in
+    xterm-color|*-256color) color_prompt=yes;;
+esac
+
+# uncomment for a colored prompt, if the terminal has the capability; turned
+# off by default to not distract the user: the focus in a terminal window
+# should be on the output of commands, not on the prompt
+#force_color_prompt=yes
+
+if [ -n "$force_color_prompt" ]; then
+    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
+# We have color support; assume it's compliant with Ecma-48
+# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
+# a case would tend to support setf rather than setaf.)
+color_prompt=yes
+    else
+color_prompt=
+    fi
+fi
+
+if [ "$color_prompt" = yes ]; then
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+else
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+fi
+unset color_prompt force_color_prompt
+
+# If this is an xterm set the title to user@host:dir
+case "$TERM" in
+xterm*|rxvt*)
+    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+    ;;
+*)
+    ;;
+esac
+
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+
+    #alias grep='grep --color=auto'
+    #alias fgrep='fgrep --color=auto'
+    #alias egrep='egrep --color=auto'
+fi
+
+# colored GCC warnings and errors
+#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+
+# some more ls aliases
+#alias ll='ls -l'
+#alias la='ls -A'
+#alias l='ls -CF'
+
+# Alias definitions.
+# You may want to put all your additions into a separate file like
+# ~/.bash_aliases, instead of adding them here directly.
+# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+# enable programmable completion features (you don't need to enable
+# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
+# sources /etc/bash.bashrc).
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
+fi
+export HISTTIMEFORMAT="%F %T "
+export PROMPT_COMMAND="history >> /home/${USER}/${USER}_part.log"
+PS1="${USER}@${HOSTNAME}-$(date +%H:%M)>"
+export LANG=ru_RU.UTF-8
+export LANG=ru_RU.UTF8
+eltex-pg1-v13@eltex-2026-spring-17:44>ls
+ls           lsblk        lscpu        lsinitramfs  lsirq        lslogins     lsmod        lsof         lsusb        
+lsattr       lsb_release  lsfd         lsipc        lslocks      lsmem        lsns         lspci        
+eltex-pg1-v13@eltex-2026-spring-17:44>ls$HIST
+$HISTCMD         $HISTCONTROL     $HISTFILE        $HISTFILESIZE    $HISTSIZE        $HISTTIMEFORMAT  
+eltex-pg1-v13@eltex-2026-spring-17:44>$HISTSIZEe$HISTSIZEc$HISTSIZEh$HISTSIZEo$HISTSIZE $HISTSIZE
+
+1000
+eltex-pg1-v13@eltex-2026-spring-17:44>ls .
+./             ../            .bash_history  .bash_logout   .bashrc        .config/       .lesshst       .log           .profile       .ssh/          .viminfo       
+eltex-pg1-v13@eltex-2026-spring-17:44>ls .history 
+
+    1  2026-03-24 17:44:31 exit
+    2  2026-03-24 17:44:31 LS
+    3  2026-03-24 17:44:31 ls
+    4  2026-03-24 17:44:31 cd /
+    5  2026-03-24 17:44:31 ls
+    6  2026-03-24 17:44:31 screen
+    7  2026-03-24 17:44:31 screen -w
+    8  2026-03-24 17:44:31 screen 
+    9  2026-03-24 17:44:31 w
+   10  2026-03-24 17:44:31 screen -d
+   11  2026-03-24 17:44:31 w
+   12  2026-03-24 17:44:31 screen
+   13  2026-03-24 17:44:31 screen -S -d -m
+   14  2026-03-24 17:44:31 screen -ls
+   15  2026-03-24 17:44:31 screen -r -d
+   16  2026-03-24 17:44:31 screen -r "-d"
+   17  2026-03-24 17:44:31 screen -r top
+   18  2026-03-24 17:44:31 screen -ls
+   19  2026-03-24 17:44:31 screen -r -d
+   20  2026-03-24 17:44:31 screen -r 61549
+   21  2026-03-24 17:44:31 screen -S `whoami`_part2 -d -m
+   22  2026-03-24 17:44:31 cat $user_part.log
+   23  2026-03-24 17:44:31 ls
+   24  2026-03-24 17:44:31 cd $
+   25  2026-03-24 17:44:31 cd /
+   26  2026-03-24 17:44:31 cd home/
+   27  2026-03-24 17:44:31 ls
+   28  2026-03-24 17:44:31 cd eltex-pg1-v13
+   29  2026-03-24 17:44:31 ls
+   30  2026-03-24 17:44:31 history
+   31  2026-03-24 17:44:31 history > USER_part.log
+   32  2026-03-24 17:44:31 ls
+   33  2026-03-24 17:44:31 head USER_part.log 
+   34  2026-03-24 17:44:31 history
+   35  2026-03-24 17:44:31 $HISTFILESIZE
+   36  2026-03-24 17:44:31 $HISTFILESIZE 
+   37  2026-03-24 17:44:31 echo $HISTFILESIZE 
+   38  2026-03-24 17:44:31 ls
+   39  2026-03-24 17:44:31 cd ~
+   40  2026-03-24 17:44:31 ls
+   41  2026-03-24 17:44:31 l.
+   42  2026-03-24 17:44:31 ls
+   43  2026-03-24 17:44:31 screen -ls
+   44  2026-03-24 17:44:31 tail USER_part.log 
+   45  2026-03-24 17:44:31 cat USER_part.log 
+   46  2026-03-24 17:44:31 screen -S `whoami`_part2 -d -m
+   47  2026-03-24 17:44:31 rm USER_part.log 
+   48  2026-03-24 17:44:31 ls
+   49  2026-03-24 17:44:31 touch USER_part.log
+   50  2026-03-24 17:44:31 echo $HISTFILESIZE 
+   51  2026-03-24 17:44:31 pwd
+   52  2026-03-24 17:44:31 history
+   53  2026-03-24 17:44:31 ls -al
+   54  2026-03-24 17:44:31 cat .
+   55  2026-03-24 17:44:31 echo $HISTCONTROL 
+   56  2026-03-24 17:44:31 cat $HISTCONTROL 
+   57  2026-03-24 17:44:31 VIM $HISTCONTROL 
+   58  2026-03-24 17:44:31 vim $HISTCONTROL 
+   59  2026-03-24 17:44:31 date
+   60  2026-03-24 17:44:31 echo "export LANG=ru_RU.UTF8">>/.bashrc
+   61  2026-03-24 17:44:31 sodu echo "export LANG=ru_RU.UTF8">>/.bashrc
+   62  2026-03-24 17:44:31 sudo echo "export LANG=ru_RU.UTF8">>/.bashrc
+   63  2026-03-24 17:44:31 cd /
+   64  2026-03-24 17:44:31 ls
+   65  2026-03-24 17:44:31 sudo echo "export LANG=ru_RU.UTF8">>/.bashrc
+   66  2026-03-24 17:44:31 export LANG=ru_RU.UTF8
+   67  2026-03-24 17:44:31 sudo echo "export LANG=ru_RU.UTF8">>/.bashrc
+   68  2026-03-24 17:44:31 sudo "export LANG=ru_RU.UTF8">>/.bashrc
+   69  2026-03-24 17:44:31 cd home/
+   70  2026-03-24 17:44:31 ls
+   71  2026-03-24 17:44:31 cd eltex-pg1-v13
+   72  2026-03-24 17:44:31 ls
+   73  2026-03-24 17:44:31 cat USER_part.log 
+   74  2026-03-24 17:44:31 man -Lru man
+   75  2026-03-10 01:19:20 ls
+   76  2026-03-10 01:19:25 cat eltex-pg1-v13_part.log 
+   77  2026-03-10 01:19:44 vim ~/.bashrc
+   78  2026-03-10 01:21:47 ls
+   79  2026-03-10 01:21:53 cat eltex-pg1-v13_part.log 
+   80  2026-03-10 01:22:25 vim ~/.bashrc
+   81  2026-03-10 01:22:46 ls
+   82  2026-03-10 01:22:54 rm eltex-pg1-v13_part.log 
+   83  2026-03-10 01:22:56 ls
+   84  2026-03-10 01:23:02 history 
+   85  2026-03-12 15:23:44 lj
+   86  2026-03-12 15:23:47 history 
+   87  2026-03-12 15:24:24 cat eltex-pg1-v13_part.log 
+   88  2026-03-12 15:25:14 ls
+   89  2026-03-12 15:25:16 history 
+   90  2026-03-12 15:25:23 cat eltex-pg1-v13_part.log 
+   91  2026-03-12 15:27:32 touch ${USER}_part3.log
+   92  2026-03-12 15:27:33 ls
+   93  2026-03-12 15:28:32 mkdir -r D{1..3}
+   94  2026-03-12 15:31:10 mkdir D1/D2/D3
+   95  2026-03-12 15:31:36 mkdir -p D1/D2/D3
+   96  2026-03-12 15:31:38 ls
+   97  2026-03-12 15:31:42 cd D1/
+   98  2026-03-12 15:31:43 ls
+   99  2026-03-12 15:31:46 cd D2/
+  100  2026-03-12 15:31:47 ls
+  101  2026-03-12 15:31:51 cd .
+  102  2026-03-12 15:31:53 ls
+  103  2026-03-12 15:31:56 cd ..
+  104  2026-03-12 15:31:57 ls
+  105  2026-03-12 15:31:59 cd ..
+  106  2026-03-12 15:32:00 ls
+  107  2026-03-12 15:32:18 cd D1/
+  108  2026-03-12 15:32:19 ls
+  109  2026-03-12 15:32:27 cd D2/
+  110  2026-03-12 15:32:28 ls
+  111  2026-03-12 15:32:37 touch file.txt
+  112  2026-03-12 15:32:40 ls
+  113  2026-03-12 15:32:56 echo lalalallala > file.txt 
+  114  2026-03-12 15:33:00 cat file.txt 
+  115  2026-03-12 15:33:15 cd D3/
+  116  2026-03-12 15:33:16 ls
+  117  2026-03-12 15:35:18 echo "export LANG=ru_RU.UTF-8" >> ~/.bashrc
+  118  2026-03-12 15:35:22 ls
+  119  2026-03-12 15:35:57 cd D1/D2
+  120  2026-03-12 15:35:58 ls
+  121  2026-03-12 15:36:11 cd D3/
+  122  2026-03-12 15:36:12 ls
+  123  2026-03-12 15:38:23 history 
+  124  2026-03-12 15:38:59 cat /home/eltex-pg1-v13/eltex-pg1-v13_part.log
+  125  2026-03-12 15:39:30 clear
+  126  2026-03-12 15:39:33 cat /home/eltex-pg1-v13/eltex-pg1-v13_part.log
+  127  2026-03-12 15:39:56 cd /home/eltex-pg1-v13
+  128  2026-03-12 15:39:57 ls
+  129  2026-03-12 15:40:06 vim ~/.bashrc
+  130  2026-03-12 15:40:35 source ~/.bashrc
+  131  2026-03-12 15:40:39 history 
+  132  2026-03-12 15:40:56 cat eltex-pg1-v13_part.log
+  133  2026-03-12 15:41:22 vim ~/.bashrc
+  134  2026-03-12 15:42:25 ls
+  135  2026-03-12 19:19:33 ls -l .ssh/id_rsa.pub
+  136  2026-03-12 19:06:41 touch practice2_${USER}_part1.log
+  137  2026-03-12 19:06:42 ls
+  138  2026-03-12 19:06:53 echo $MYUSER
+  139  2026-03-12 19:07:15 ssh-keygen
+  140  2026-03-12 19:08:09 ls
+  141  2026-03-12 19:08:50 cat .ssh/id_rsa.pub
+  142  2026-03-12 19:12:44 ssh-copy-id root@172.16.9.174.13
+  143  2026-03-12 19:12:57 ssh-copy-id root@172.16.9.187
+  144  2026-03-12 19:14:39 ssh 'root@172.16.9.187'
+  145  2026-03-12 20:53:04 ls
+  146  2026-03-12 20:53:12 history 
+  147  2026-03-12 20:53:24 cat eltex-pg1-v13_part.log
+  148  2026-03-12 20:55:15 less eltex-pg1-v13_part.log
+  149  2026-03-12 20:56:16 ls
+  150  2026-03-17 17:16:59 history 
+  151  2026-03-17 17:20:36 ssh 'root@172.16.9.174.13'
+  152  2026-03-17 17:21:09 ssh 'root@172.16.9.174.187'
+  153  2026-03-17 17:21:19 ssh 'root@172.16.9.187'
+  154  2026-03-17 17:22:21 ssh 'user1@172.16.9.187'
+  155  2026-03-17 17:35:14 ls
+  156  2026-03-17 17:35:53 echo $HISTSIZE
+  157  2026-03-17 17:36:42 history 
+  158  2026-03-17 17:38:30 ssh 'user1@172.16.9.187'
+  159  2026-03-24 17:25:33 ls
+  160  2026-03-24 17:26:33 pwd
+  161  2026-03-24 17:28:56 ls
+  162  2026-03-24 17:31:51 echo $HISTSIZE
+  163  2026-03-24 17:40:19 echo "export LANG=ru_RU.UTF8" >> /.bashrc
+  164  2026-03-24 17:40:27 sudo echo "export LANG=ru_RU.UTF8" >> /.bashrc
+  165  2026-03-24 17:40:48 echo "export LANG=ru_RU.UTF8" >> ~/.bashrc
+  166  2026-03-24 17:45:51 cat ~/.bashrc
+  167  2026-03-24 17:47:09 echo $HISTSIZE
+  168  2026-03-24 17:48:06 history 
+eltex-pg1-v13@eltex-2026-spring-17:44>ls /b
+bin/  boot/ 
+eltex-pg1-v13@eltex-2026-spring-17:44>ls /bin/**0*-*9*
+
+ls: cannot access '/bin/*0-9*': No such file or directory
+eltex-pg1-v13@eltex-2026-spring-17:44>ls /bin/*0-9****[*]*0]*-]*9]*
+
+/bin/addr2line                  /bin/grub-menulst2cfg           /bin/py3clean                    /bin/x86_64-linux-gnu-c++filt         /bin/x86_64-linux-gnu-gp-display-html
+/bin/b2sum                      /bin/grub-mkpasswd-pbkdf2       /bin/py3compile                  /bin/x86_64-linux-gnu-cpp             /bin/x86_64-linux-gnu-gp-display-src
+/bin/base32                     /bin/grub-syslinux2cfg          /bin/py3versions                 /bin/x86_64-linux-gnu-cpp-12          /bin/x86_64-linux-gnu-gp-display-text
+/bin/base64                     /bin/h2ph                       /bin/pydoc3                      /bin/x86_64-linux-gnu-dwp             /bin/x86_64-linux-gnu-gprof
+/bin/bunzip2                    /bin/h2xs                       /bin/pydoc3.11                   /bin/x86_64-linux-gnu-elfedit         /bin/x86_64-linux-gnu-gprofng
+/bin/bzip2                      /bin/i386                       /bin/pygettext3                  /bin/x86_64-linux-gnu-gcc             /bin/x86_64-linux-gnu-ld
+/bin/bzip2recover               /bin/linux32                    /bin/pygettext3.11               /bin/x86_64-linux-gnu-gcc-12          /bin/x86_64-linux-gnu-ld.bfd
+/bin/c89                        /bin/linux64                    /bin/python3                     /bin/x86_64-linux-gnu-gcc-ar          /bin/x86_64-linux-gnu-ld.gold
+/bin/c89-gcc                    /bin/lto-dump-12                /bin/python3.11                  /bin/x86_64-linux-gnu-gcc-ar-12       /bin/x86_64-linux-gnu-lto-dump
+/bin/c99                        /bin/md5sum                     /bin/sha1sum                     /bin/x86_64-linux-gnu-gcc-nm          /bin/x86_64-linux-gnu-lto-dump-12
+/bin/c99-gcc                    /bin/md5sum.textutils           /bin/sha224sum                   /bin/x86_64-linux-gnu-gcc-nm-12       /bin/x86_64-linux-gnu-nm
+/bin/cpan5.36-x86_64-linux-gnu  /bin/pdb3                       /bin/sha256sum                   /bin/x86_64-linux-gnu-gcc-ranlib      /bin/x86_64-linux-gnu-objcopy
+/bin/cpp-12                     /bin/pdb3.11                    /bin/sha384sum                   /bin/x86_64-linux-gnu-gcc-ranlib-12   /bin/x86_64-linux-gnu-objdump
+/bin/diff3                      /bin/perl5.36.0                 /bin/sha512sum                   /bin/x86_64-linux-gnu-gcov            /bin/x86_64-linux-gnu-ranlib
+/bin/enc2xs                     /bin/perl5.36-x86_64-linux-gnu  /bin/ssh-argv0                   /bin/x86_64-linux-gnu-gcov-12         /bin/x86_64-linux-gnu-readelf
+/bin/gcc-12                     /bin/ping4                      /bin/systemd-id128               /bin/x86_64-linux-gnu-gcov-dump       /bin/x86_64-linux-gnu-size
+/bin/gcc-ar-12                  /bin/ping6                      /bin/traceroute6                 /bin/x86_64-linux-gnu-gcov-dump-12    /bin/x86_64-linux-gnu-strings
+/bin/gcc-nm-12                  /bin/pl2pm                      /bin/traceroute6.db              /bin/x86_64-linux-gnu-gcov-tool       /bin/x86_64-linux-gnu-strip
+/bin/gcc-ranlib-12              /bin/pod2html                   /bin/x86_64                      /bin/x86_64-linux-gnu-gcov-tool-12
+/bin/gcov-12                    /bin/pod2man                    /bin/x86_64-linux-gnu-addr2line  /bin/x86_64-linux-gnu-gold
+/bin/gcov-dump-12               /bin/pod2text                   /bin/x86_64-linux-gnu-ar         /bin/x86_64-linux-gnu-gp-archive
+/bin/gcov-tool-12               /bin/pod2usage                  /bin/x86_64-linux-gnu-as         /bin/x86_64-linux-gnu-gp-collect-app
+eltex-pg1-v13@eltex-2026-spring-17:44>ls /bin/*[0-9]*sbin/*[0-9]*
+
+/sbin/dumpe2fs    /sbin/e2fsck   /sbin/e2label      /sbin/e2scrub      /sbin/e2undo   /sbin/e4defrag   /sbin/fsck.ext3  /sbin/killall5  /sbin/mkfs.ext2  /sbin/mkfs.ext4  /sbin/tune2fs
+/sbin/e2freefrag  /sbin/e2image  /sbin/e2mmpstatus  /sbin/e2scrub_all  /sbin/e4crypt  /sbin/fsck.ext2  /sbin/fsck.ext4  /sbin/mke2fs    /sbin/mkfs.ext3  /sbin/resize2fs  /sbin/update-grub2
+eltex-pg1-v13@eltex-2026-spring-17:44>pwd
+
+/home/eltex-pg1-v13
+eltex-pg1-v13@eltex-2026-spring-17:44>mkdir -p /$()d)a)t)e)+)")")%")Y")-")%")m")/{}0}.}.}1}2}
+
+-bash: date+%Y-%m: command not found
+-bash: date+%Y-%m: command not found
+-bash: date+%Y-%m: command not found
+-bash: date+%Y-%m: command not found
+-bash: date+%Y-%m: command not found
+-bash: date+%Y-%m: command not found
+-bash: date+%Y-%m: command not found
+-bash: date+%Y-%m: command not found
+-bash: date+%Y-%m: command not found
+-bash: date+%Y-%m: command not found
+-bash: date+%Y-%m: command not found
+-bash: date+%Y-%m: command not found
+-bash: date+%Y-%m: command not found
+mkdir: cannot create directory //0: Permission denied
+mkdir: cannot create directory //1: Permission denied
+mkdir: cannot create directory //2: Permission denied
+mkdir: cannot create directory //3: Permission denied
+mkdir: cannot create directory //4: Permission denied
+mkdir: cannot create directory //5: Permission denied
+mkdir: cannot create directory //6: Permission denied
+mkdir: cannot create directory //7: Permission denied
+mkdir: cannot create directory //8: Permission denied
+mkdir: cannot create directory //9: Permission denied
+mkdir: cannot create directory //10: Permission denied
+mkdir: cannot create directory //11: Permission denied
+mkdir: cannot create directory //12: Permission denied
+eltex-pg1-v13@eltex-2026-spring-17:44>ls
+
+2026-01  2026-03  2026-05  2026-07  2026-09  2026-11  D1                       eltex-pg1-v13_part.log             report_part1.txt
+2026-02  2026-04  2026-06  2026-08  2026-10  2026-12  eltex-pg1-v13_part3.log  practice2_eltex-pg1-v13_part1.log
+eltex-pg1-v13@eltex-2026-spring-17:44>
